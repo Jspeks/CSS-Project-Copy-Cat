@@ -1,0 +1,51 @@
+/* attempting to recreate the displayed colors, etc... */
+body {
+    background-color: #86608e;
+    text-align: center;
+    color: white;
+    font-family: beleren;
+}
+/* Needed to have the header indented from the top of the page */ 
+h1 {
+    margin: 2em 0em 0em 0em;
+}
+/* The "search bar" will scale with the page */
+input {
+    width: 75%;
+    margin: 1em
+}
+/* my fake buttons just needed to at least look like links/buttons because I didn't want to have to make several pages */
+ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+}
+li {
+    border-style: solid;
+    margin: 1em 0.5em;
+}
+/* once I got the width to adjust with the page, I couldn't manage to realign it centered, under the nav bar */
+p {
+    width: 30%;
+}
+/* create a display for my "cards" */
+#display {
+    display: flex;
+    justify-content: center;
+}
+/* need each pair of cards to be on top of eachother and be small enough to recognize as cards */
+#first-2, #second-2, #third-2, #trejo {
+    display:inline-block;
+    width: 10em;
+}
+img {
+    width:10em;
+}
+/* when hovering over the cards, they should lift up a bit to show which is being looking at */
+img:hover {
+    margin: -4em;
+}
+/* original img needs to not follow the same specifications as the cards at the bottom of my page */
+#original {
+    width: 100%;
+}
